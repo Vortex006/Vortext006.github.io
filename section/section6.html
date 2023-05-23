@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section6</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container bg-light">
+
+        <!-- 主标题 -->
+        <div class="row">
+            <div class="col-sm-12 text-center p-4">
+                <span class="h1 display-3 font-weight-bold bg-color1">No.6 CSS组件</span>
+            </div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="list-unstyled text-center p-2">
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section2.html">第二章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section3.html">第三章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section4.html">第四章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section5.html">第五章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../shopping/shopping-index.html">综合案例</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主体 -->
+        <div class="row">
+
+            <!-- index-nav -->
+            <div class="col-sm-3 border">
+                <div class="list-group">
+                    <a href="#index6-1" class="list-group-item list-group-item-action">下拉菜单</a>
+                    <a href="#index6-2" class="list-group-item list-group-item-action">导航和导航条</a>
+                    <a href="#index6-3" class="list-group-item list-group-item-action">分页导航和徽章</a>
+                    <a href="#index6-4" class="list-group-item list-group-item-action">卡片</a>
+                    <a href="#index6-5" class="list-group-item list-group-item-action">进度条</a>
+                    <a href="#index6-6" class="list-group-item list-group-item-action">列表组</a>
+                    <a href="#index6-7" class="list-group-item list-group-item-action">媒体对象</a>
+                    <a href="#index6-8" class="list-group-item list-group-item-action">巨幕、旋转图标和按钮组</a>
+                </div>
+            </div>
+
+            <!-- index-main -->
+            <div class="col-sm-9 border-top px-5">
+                <div class="row">
+
+                    <!-- index-1 -->
+                    <div class="col-sm-12 p-3" id="index6-1">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">下拉菜单</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>基本下拉菜单</td>
+                                        <td>
+                                            <p>一个基本的下拉菜单由触发按钮和下拉列表组成。</p>
+                                            <p>所有下拉菜单内容必须放在一个div元素的容器中，并给它添加【dropdown】类，若设置【dropup】类、【dropleft】类或【dropright】类，则可以让菜单向上、向左或向右弹出。
+                                            </p>
+                                            <p>在该div元素中放入一个button元素作为触发按钮，给button按钮添加【dropdown-toggle】类以及【data-toggle="dropdown"】属性。
+                                            </p>
+                                            <p>在按钮button元素的下面添加ul列表创建一个下拉列表，给ul元素添加【dropdown-menu】类，给li元素中的超链接a元素添加【dropdown-item】类。
+                                            </p>
+                                            <p>由于下拉展开是一个动态效果，需要JavaScript来实现，所以需要在代码最下方引入【jQuery.js】文件和【BootStrap.bundle.js】文件。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>分割线</td>
+                                        <td>
+                                            <p>给下拉菜单中li元素添加【dropdown-divider】类，可以在菜单项中添加分割线，来实现菜单分组的效果。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>菜单标题</td>
+                                        <td>
+                                            <p>通过给下拉菜单中的li元素添加【dropdown-header】类，可以在菜单项中添加分组标题，标题默认样式比菜单项字号略小，颜色略浅。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>对齐方式</td>
+                                        <td>
+                                            <p>默认情况下，下拉菜单为左侧对齐。为下拉菜单ul元素添加【dropdown-menu-right】类可以让菜单沿着触发按钮的右侧对齐。若添加【dropdown-menu-left】类，可以让菜单沿着触发按钮的左侧对齐（默认样式）。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>禁用菜单项</td>
+                                        <td>
+                                            <p>在菜单项中的超链接a元素上添加【disabled】类，可以将该项设为禁用。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p142-146
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-2 -->
+                    <div class="col-sm-12 p-3" id="index6-2">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">导航和导航条</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>导航基础样式</td>
+                                        <td>
+                                            <p>给ul元素或者nav元素添加一个【nav】类，在超链接a元素上需添加【nav-link】类，在li元素上需要添加【nav-item】类。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>选项卡导航</td>
+                                        <td>
+                                            <p>在ul元素或nav元素上，除了添加【nav】基类外，再添加一个【nav-tabs】类，可以创建选项卡导航。</p>
+                                            <p>在超链接a元素上添加【active】类，表示该链接是激活状态，可以让该链接获得选项卡导航特有的突出效果。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pills导航</td>
+                                        <td>
+                                            <p>在ul元素或nav元素上，除了添加【nav】基类外，再添加一个【nav-pills】类，可以创建Pills导航。</p>
+                                            <p>在超链接a元素上添加【active】类，表示该链接是激活状态，可以让该链接获得Pills导航特有的突出效果。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>垂直导航</td>
+                                        <td>
+                                            <p>在ul元素或nav元素上，添加【flex-column】类，可以让导航垂直显示。</p>
+                                            <p>如果选项卡导航使用了【active】类，则其无法在垂直显示时获得良好的外观，因此一般只将基础导航或Pills导航设为垂直导航。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>导航禁用状态和对齐方式</td>
+                                        <td>
+                                            <p>在导航的超链接a元素上添加【active】类，可以让其获得激活状态；在超链接a元素上添加【disabled】类，使其变为禁用状态。</p>
+                                            <p>导航的默认对齐方式为居左对齐，在ul元素或nav元素上添加【justify-content-center】类或【justify-content-end】类，可以实现居中对齐或居右对齐。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>导航二级菜单</td>
+                                        <td>
+                                            <p>向导航元素中嵌套下拉菜单，即可实现导航二级菜单的效果。</p>
+                                            <p>无论是使用列表+超链接，还是nav元素+超链接的方式制作导航，无论是选项卡导航的外观还是Pills导航的外观，均可以实现导航二级菜单的效果。
+                                            </p>
+                                            <p>只需要将菜单项【nav-link】或【nav-item】作为下拉菜单的容器元素即可，为其添加【dropdown】类，余下按照下拉菜单制作。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>面包屑导航</td>
+                                        <td>
+                                            <p>面包屑导航是一个简单的带有【breadcrumb】类的无序列表。</p>
+                                            <p>默认样式的导航具有灰色背景颜色，导航链接之间用“/”分隔。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>基本导航条</td>
+                                        <td>
+                                            <p>在nav元素上添加【navbar】类来创建一个标准的导航栏，后面紧跟【navbar-expand{-sm|-md|-lg|-xl}】类来创建响应式导航栏。
+                                            </p>
+                                            <p>在nav元素中添加一个【navbar-header】类的元素作为导航条的头部。这个元素可以是a元素、div元素或者其他元素，比如图片、文本等。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>导航条上的链接和表单</td>
+                                        <td>
+                                            <p>在nav元素中添加一个【navber-nav】类来创建一个导航条，在导航条的链接中，设置【active】类为激活状态；设置【disabled】类为禁用状态。
+                                            </p>
+                                            <p>如果需要将表单控件或者输入框放入导航条中，需要再form元素上添加【form-inline】类。</p>
+                                            <p>默认情况下，导航栏中的表单是居左放置的，如果需要居右放置，可以为导航条中的到导航元素添加【mr-auto】类。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>其他导航条设置</td>
+                                        <td>
+                                            <p>将文本内容装在使用了【navbar-text】类的span元素中，便能在导航条中添加非链接纯文本了。</p>
+                                            <p>在导航条中添加二级菜单，与在导航中添加二级菜单一致。</p>
+                                            <p>通过给导航条元素添加【fixed-top】类或者【fixed-bottom】类，将导航条固定在顶部或底部，当导航条固定在顶部或底部时，导航条的宽度不再与父元素同宽，而是与浏览器窗口同宽。
+                                            </p>
+                                            <p>为导航条nav元素添加【bg-颜色】类以及【navbar-颜色】类，即可设置导航条的背景颜色与文本颜色。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p147-159
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-3 -->
+                    <div class="col-sm-12 p-3" id="index6-3">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">分页导航和徽章</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>分页导航</td>
+                                        <td>
+                                            <p>分页是使用列表ul元素构成的，在ul元素上添加【pagination】类，或者在li元素上添加【page-item】类，在超链接a元素上添加【page-link】类，然后将列表ul元素放入nav元素中，就可以生成一个分页组件。
+                                            </p>
+                                            <p>分页导航也可以通过添加【active】类设置成激活状态，添加【disabled】类设置成禁用状态。</p>
+                                            <p>添加【pageination-sm】类或者【pageination-lg】类可以设置分页导航的大小。</p>
+                                            <p>通过使用【justify-content-{start|center|end|between|around}】类可以设置分页导航的排列位置。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>徽章</td>
+                                        <td>
+                                            <p>在span元素上添加【badge】类可以创建一个徽章组件。</p>
+                                            <p>徽章是一个具有内边距、背景颜色、圆角等样式的简单组件，徽章的颜色可以通过【badge-color】系列类来选择。</p>
+                                            <p>边框圆角工具类可修饰徽章的外观，也可以用【badge-pill】类来修饰徽章，从而得到比较美观的样式。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p159-162
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-4 -->
+                    <div class="col-sm-12 p-3" id="index6-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">卡片</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>基本卡片</td>
+                                        <td>
+                                            <p>为div元素添加【card】类，可以创建一个卡片组件。</p>
+                                            <p>卡片主体：卡片主体是一个添加了【card-body】类的div元素，里面可以装标题【card-title】、副标题【card-subtitle】、文本【card-text】、段落、超链接【card-link】、按钮、列表组、引用等。
+                                            </p>
+                                            <p>当图片和卡片主体结合放置时，若图片放在卡片主体的上方，给img元素添加【card-img-top】类，则图片左上角与右上角会添加圆角效果；若图片放在卡片主体的下方，添加【card-img-bottom】类，则图片左下角与右下角会添加圆角效果；若卡片没有文字，直接使用【card-img】类，图片的4个角都添加了圆角效果。
+                                            </p>
+                                            <p>当图片与卡片主体结合时，可以将图片设置为卡片主体的背景，只需要在【card-body】的div里加上【card-img-overlay】类即可。
+                                            </p>
+                                            <p>对于卡片主体内文本的排列，可以使用文本排列工具类【text-{left|right|center}】来实现。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>卡片的页眉与脚注</td>
+                                        <td>
+                                            <p>在设计卡片时，可以选择性的添加页眉和脚注。</p>
+                                            <p>在div元素中添加【card-header】类即可获得一个卡片的页眉。</p>
+                                            <p>在div元素中添加【card-footer】类即可获得一个卡片的脚注。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>水平卡片</td>
+                                        <td>
+                                            <p>使用栅格系统，可以将图片和文字部分水平显示。</p>
+                                            <p>在添加了【row】类的元素上使用【no-gutters】类，可以去掉行的左右外边距和列的内边距。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>卡片组</td>
+                                        <td>
+                                            <p>可以将多个卡片放入设置了【card-group】类或【card-deck】类的div元素中，就可以得到一个卡片组。</p>
+                                            <p>当使用【card-group】类时，卡片组内的卡片之间无缝隙，并等高等宽；当使用【card-deck】类时，卡片组内的卡片之间不相连，并等高等宽。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>卡片的布局</td>
+                                        <td>
+                                            <p>使用栅格系统布局卡片时，可以使用【row-cols-*】来控制每行显示的列数。（*取值1-5）</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p162-169
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-5 -->
+                    <div class="col-sm-12 p-3" id="index6-5">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">进度条</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>基础进度条</td>
+                                        <td>
+                                            <p>进度条由嵌套的两个div构成，外层div上添加【progress】类，用作进度条的槽；内层的div上添加【progress-bar】类，用来表示当前进度，进度的长度由行内样式的width属性来设置。
+                                            </p>
+                                            <p>进度条的颜色可以通过进度条内层的【div.progress-bar】中添加背景颜色类【bg-*】的方式来设置。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>条纹进度条</td>
+                                        <td>
+                                            <p>将【progress-bar-striped】类添加到进度条内层的【div.progress-bar】上，即可为进度条加上条纹效果，若再添加【progress-bar-animated】类，则条纹会呈现动态流动的效果。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>进度条堆叠效果</td>
+                                        <td>
+                                            <p>把多个进度条放入同一个【progress】中，即可使它们呈现出堆叠的效果，通过在【progress】上设置height可以调整进度条的高度，同时，内部的【progress-bar】自动调整大小。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p170-172
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-6 -->
+                    <div class="col-sm-12 p-3" id="index6-6">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">列表组</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>基础列表组</td>
+                                        <td>
+                                            <p>基础列表组仅仅是一个带有多个列表条目的无序列表，给ul元素和li元素分别应用【list-group】类和【list-group-item】类，即可生成一个列表组。
+                                            </p>
+                                            <p>向列表组的任意列表项li元素添加徽章组件，即可在该列表项右侧显示徽章。</p>
+                                            <p>给列表项目【list-group-item】添加【active】类，可以让单个列表项目背景颜色突出，进入激活状态；添加【disabled】类，可以让单个列表项目文字显示为灰色，进入被禁用状态。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>链接列表组</td>
+                                        <td>
+                                            <p>div元素和超链接a元素可以代替列表ul元素和列表项li元素。在div元素上添加【list-group】类，在a元素上添加【list-group-item】和【list-group-item-action】类，则可创建一个具有鼠标悬停效果的链接列表组。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>列表组主题</td>
+                                        <td>
+                                            <p>列表项目【list-group-item】添加情景类【list-group-item-{danger|primary|siccess|warning|info}】，可以使其显示不同的情景样式。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p172-176
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- index-7 -->
+                    <div class="col-sm-12 p-3" id="index6-7">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">媒体对象</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>基本媒体对象</td>
+                                        <td>
+                                            <p>要创建一个媒体对象，可以在容器div元素上添加【media】类，在div中放入图片等媒体对象；再将其他文字内容放在子元素div容器中，子容器添加【media-body】类。
+                                            </p>
+                                            <p>向列表组的任意列表项li元素添加徽章组件，即可在该列表项右侧显示徽章。</p>
+                                            <p>在媒体对象中，媒体与文字内容的默认对齐方式都是顶部对齐【align-self-start】，即媒体与文字内容的顶部对齐，也可以在媒体上添加【align-self-center】类或者【align-self-end】类，使其与文字内容上下居中对齐或底部对齐。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>媒体对象嵌套</td>
+                                        <td>
+                                            <p>将一个媒体对象【media】放入另一个媒体对象的【media-body】中，即可实现媒体对象的嵌套</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>媒体列表组</td>
+                                        <td>
+                                            <p>媒体对象可以放入列表元素中，作为列表项：只需要将【media】放入li元素中，同时列表使用【list-unstyled】移除默认样式。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p177-181
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-8 -->
+                    <div class="col-sm-12 p-3" id="index6-8">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">巨幕、旋转图标和按钮组</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>巨幕</td>
+                                        <td>
+                                            <p>巨幕是一个轻量、灵活的组件，它可以延伸至整个浏览器窗口来展示网站上的关键内容。</p>
+                                            <p>创建一个带有【jumbotron】类的div元素即可添加一个巨幕。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>旋转图标</td>
+                                        <td>
+                                            <p>在div上添加【spinner-border】类，即可得到一个不断旋转的带缺口的黑色圆环图标，为其添加【text-color】颜色类，可实现自定义旋转图标的颜色。
+                                            </p>
+                                            <p>若在div上添加的是【spinner-grow】类，则可以得到不断反复变大的圆形，即增长型旋转圆环。默认颜色依然是黑色，可以通过【text-color】类来改变旋转图标的颜色。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>按钮组</td>
+                                        <td>
+                                            <p>使用一个div容器包裹多个【btn】按钮，并应用【btn-group】类，即可创建一个按钮组。</p>
+                                            <p>将一组【btn-group】组合进一个【btn-toolbar】，可以生成更复杂的组件，即按钮工具栏。</p>
+                                            <p>通过设置【btn-group-sm】类或者【btn-group-lg】类，可以改变按钮组的大小。</p>
+                                            <p>如果将按钮组的div元素的【btn-group】类替换为【btn-group-vertical】类，可以让一组按钮垂直堆叠排列显示而不是水平显示。
+                                            </p>
+                                            <p>分裂式按钮下拉菜单是将按钮分为左右两个部分，左侧是正常按钮，右侧按钮用于触发下拉菜单，只需要对右边按钮设置【dropdown-toggle-split】类即可实现分裂式按钮下拉菜单的效果。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p182-192
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

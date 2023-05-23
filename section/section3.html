@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section3</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container bg-light">
+
+        <!-- 主标题 -->
+        <div class="row">
+            <div class="col-sm-12 text-center p-4">
+                <span class="h1 display-3 font-weight-bold bg-color1">No.3 CSS布局</span>
+            </div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="list-unstyled text-center p-2">
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section2.html">第二章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section4.html">第四章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section5.html">第五章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section6.html">第六章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../shopping/shopping-index.html">综合案例</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主体 -->
+        <div class="row">
+
+            <!-- index-nav -->
+            <div class="col-sm-3 border">
+                <div class="list-group">
+                    <a href="#index3-1" class="list-group-item list-group-item-action">BootStrap的排版简述</a>
+                    <a href="#index3-2" class="list-group-item list-group-item-action">标题类</a>
+                    <a href="#index3-3" class="list-group-item list-group-item-action">文本类</a>
+                    <a href="#index3-4" class="list-group-item list-group-item-action">列表与代码类</a>
+                    <a href="#index3-5" class="list-group-item list-group-item-action">表格类</a>
+                    <a href="#index3-6" class="list-group-item list-group-item-action">按钮类</a>
+                    <a href="#index3-7" class="list-group-item list-group-item-action">图像与图文类</a>
+                </div>
+
+            </div>
+
+            <!-- index-main -->
+            <div class="col-sm-9 border-top px-5">
+                <div class="row">
+
+                    <!-- index-1 -->
+                    <div class="col-sm-12 p-3" id="index3-1">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">BootStrap的排版简述</span>
+                            </div>
+                            <div class="card-body">
+                                <p>BootStrap4.6.0默认的font-size为1rem（16px），line-height（行高）为1.5。</p>
+                                <p>&lt;p&gt;元素margin-top:0、margin-bottom:1rem（16px）。</p>
+                                <p>【rem】是BootStrap新增的一种单位，1rem为16px，2rem为32px。</p>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p35
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-2 -->
+                    <div class="col-sm-12 p-3" id="index3-2">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">标题类</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>主标题</td>
+                                        <td>
+                                            <p>BootStrap对“h1-h6”这六个主标题标签做了改动，同时，你也可以通过给元素添加“h1-h6”这六个类，来让元素拥有不同级别标题的样式。
+                                            </p>
+                                            <p>一级标题 “h1” （半粗体 2.5rem 40px）</p>
+                                            <p>二级标题 “h2” （半粗体 2rem 32px）</p>
+                                            <p>三级标题 “h3” （半粗体 1.75rem 28px）</p>
+                                            <p>四级标题 “h4” （半粗体 1.5rem 24px）</p>
+                                            <p>五级标题 “h5” （半粗体 1.25rem 20px）</p>
+                                            <p>六级标题 “h6” （半粗体 1rem 16px）</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>副标题</td>
+                                        <td>
+                                            <p>通过&lt;small&gt;标签或者给元素设置【small】类来得到一个字号更小、颜色更浅的副标题。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Display标题</td>
+                                        <td>
+                                            <p>BootStrap中还提供了【Display】类来设置标题的样式。</p>
+                                            <p>通过设置【display-*】类来实现Display样式的标题。（*为数字1-4）。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>中心内容</td>
+                                        <td>
+                                            <p>通过设置【lead】类来突出某些文本内容。但是有些浏览器可能不支持这个类。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>内联文本标签</td>
+                                        <td>
+                                            <p>下面介绍一些常用的内联文本标签：</p>
+                                            <p>&lt;b&gt; &lt;strong&gt;：文本加粗</p>
+                                            <p>&lt;del&gt; &lt;s&gt;：删除线</p>
+                                            <p>&lt;ins&gt; &lt;u&gt;：下划线</p>
+                                            <p>&lt;mark&gt;：高亮文本</p>
+                                            <p>&lt;em&gt; &lt;i&gt;：斜体</p>
+                                            <p>&lt;small&gt;：小号文本，父元素字体的80%</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p36-40
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-3 -->
+                    <div class="col-sm-12 p-3" id="index3-3">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">文本类</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>文本颜色</td>
+                                        <td>
+                                            <p>通过给元素设置不同类，来让元素内的文字呈现不同颜色。</p>
+                                            <p>【text-muted】：<span class="text-muted">柔和文本 浅灰色</span></p>
+                                            <p>【text-primary】：<span class="text-primary">主要文本 蓝色</span></p>
+                                            <p>【text-success】：<span class="text-success">成功文本 绿色</span></p>
+                                            <p>【text-info】：<span class="text-info">信息文本 浅蓝色</span></p>
+                                            <p>【text-warning】：<span class="text-warning">警告文本 黄色</span></p>
+                                            <p>【text-danger】：<span class="text-danger">危险文本 褐色</span></p>
+                                            <p>【text-secondar】：<span class="text-secondar">副标题文本 灰色</span></p>
+                                            <p>【text-dark】：<span class="text-dark">深色文本 深色</span></p>
+                                            <p>【text-body】：<span class="text-body">body文本 深色</span></p>
+                                            <p>【text-light】：<span class="text-light bg-dark">浅色文本 浅色</span></p>
+                                            <p>【text-white】：<span class="text-white bg-dark">白色文本 白色</span></p>
+                                            <p>【text-black】：<span class="text-black">黑色文本 黑色</span></p>
+                                            <p>通过设置【text-reset】类可以让文本或链接的颜色继承父元素的颜色属性。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>文本排列与变换</td>
+                                        <td>
+                                            <p>通过给元素设置不同类，来让文本按照一定规则排列与变换。</p>
+                                            <p>【text-left】：文本左对齐。</p>
+                                            <p>【text-right】：文本居中对齐。</p>
+                                            <p>【text-center】：文本右对齐。</p>
+                                            <p>【text-justify】：文本两端对齐。</p>
+                                            <p>【text-X-*】：自定义类型，其中X为sm、md、lg、xl，*为left、center、right、justify等</p>
+                                            <p>【text-lowercase】：将文本中的大写字母转换为小写字母。</p>
+                                            <p>【text-uppercase】：将文本中的小写字母转换为大写字母。</p>
+                                            <p>【text-capitalize】：将文本中的首字母转换为大写字母。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>字体样式</td>
+                                        <td>
+                                            <p>通过给元素设置不同类，来让元素内的文本呈现不同样式。</p>
+                                            <p>【font-weight-bold】：<span class="font-weight-bold">粗体文字</span></p>
+                                            <p>【font-weight-bolder】：<span class="font-weight-bolder">比父元素粗的文字</span></p>
+                                            <p>【font-weight-normal】：<span class="font-weight-normal">普通重量文字</span></p>
+                                            <p>【font-weight-light】：<span class="font-weight-light"></span>轻重量文字</p>
+                                            <p>【font-weight-lighter】：<span class="font-weight-lighter">重量较父元素轻的文字</span>
+                                            </p>
+                                            <p>【font-italic】：<span class="font-italic">斜体文字</span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>文本相关类</td>
+                                        <td>
+                                            <p>通过给元素设置不同类，来对元素内的文本进行修饰。</p>
+                                            <p>【text-monospace】：等宽字体</p>
+                                            <p>【text-nowrap】：段落中超出屏幕的部分不换行</p>
+                                            <p>【text-wrap】：段落中超出屏幕的部分换行</p>
+                                            <p>【text-truncate】：截取多余内容</p>
+                                            <p>【text-break】：单词换行</p>
+                                            <p>【text-decoration-none】：链接无下划线</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>缩略语与地址</td>
+                                        <td>
+                                            <p>&lt;abbr&gt;标签用于定义缩略语，而BootStrap对&lt;abbr&gt;元素做了修饰，让&lt;abbr&gt;元素的样式变为带有较浅虚线下边框，当鼠标指针悬停在上面时会变成带有“？”的指针，同时会显示出完整的文本。（注：必须为&lt;abbr&gt;的title属性添加文本）<br><br>
+                                                使用&lt;address&gt;标签可以在网页上显示联系信息，在该元素内，每行信息都使用标签&lt;br&gt;来保留样式。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>引用文本</td>
+                                        <td>
+                                            <p>当需要在网页中引用其他来源的内容时，可以使用&lt;blockquote&gt;标签，将任何HTML元素包裹在&lt;blockquote
+                                                class="blockquote"&gt;元素中即可表现为引用样式。</p>
+                                            <p>在&lt;blockquote&gt;元素中可以嵌套&lt;footer&gt;元素来标明引用的来源，同时还可以使用&lt;cite&gt;标签来添加引用的著作名称等。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p41-47
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-4 -->
+                    <div class="col-sm-12 p-3" id="index3-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">列表类</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>无序、有序列表</td>
+                                        <td>
+                                            <p>无序列表是指没有特定顺序的一列元素，是以传统风格的着重号开头的列表。</p>
+                                            <p>有序列表是顺序至关重要的一组元素，是以数字或其他有序字符开头的列表。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>无样式列表</td>
+                                        <td>
+                                            <p>通过给列表&lt;ul&gt;或&lt;ol&gt;元素应用样式类【list-unstyle】，可以移除默认的list-style样式（列表的项目符号和左侧外边距），这是针对直接子元素的，如果有嵌套列表，需要逐个添加。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>内联列表</td>
+                                        <td>
+                                            <p>通过给列表&lt;ul&gt;或&lt;ol&gt;元素应用样式类【list-inline】，对&lt;li&gt;元素应用样式类【list-inline-item】，可以将列表的所有元素放置于同一行，这就是内联列表。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>基本描述列表</td>
+                                        <td>
+                                            <p>描述列表，又叫做定义列表，是指带有描述的短语列表。由&lt;dl&gt;元素包裹&lt;dt&gt;元素构成。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>水平描述列表</td>
+                                        <td>
+                                            <p>通过栅格系统，可以让该元素内的短语及其描述排在同一行，另外，对于较长的短语，可以增加【text-truncate】类来截断文本，用“……”来代替。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>代码类</td>
+                                        <td>
+                                            <p>BootStrap允许使用一些标签来显示代码文本。</p>
+                                            <p>&lt;code&gt;：包裹内联样式的代码片段。</p>
+                                            <p>&lt;kbd&gt;：标记用户通过键盘输入的内容。</p>
+                                            <p>&lt;pre&gt;：显示多行代码，注意需要将尖括号做转义处理。</p>
+                                            <p>&lt;var&gt;：标记变量。</p>
+                                            <p>&lt;samp&gt;：标记程序输出的内容。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p48-51
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-5 -->
+                    <div class="col-sm-12 p-3" id="index3-5">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">表格类</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>基本表格</td>
+                                        <td>
+                                            <p>通过给&lt;table&gt;元素应用样式类【table】，可以让表格表现为少量的内边距（padding）和水平方向的分割线，表格宽度100%。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>斑马线表格</td>
+                                        <td>
+                                            <p>在给&lt;table&gt;元素应用样式类【table】的前提下，应用样式类【table-striped】，可以让表格元素内的每一行增加斑马条纹样式。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>表格边框</td>
+                                        <td>
+                                            <p>通过给&lt;table&gt;元素应用样式类【table-bordered】可以为表格和其中的单元格增加边框。</p>
+                                            <p>通过给&lt;table&gt;元素应用样式类【table-borderless】可以为表格和其中的单元格去掉边框。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>鼠标悬停高亮</td>
+                                        <td>
+                                            <p>通过给&lt;table&gt;元素应用样式类【table-hover】可以为表格元素内的每一行对鼠标悬停状态做出响应。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>紧凑型表格</td>
+                                        <td>
+                                            <p>通过给&lt;table&gt;元素应用样式类【table-sm】可以让表格更加紧凑，单元格中的内边距减半。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>响应式表格</td>
+                                        <td>
+                                            <p>将表格放入&lt;div&gt;中，对&lt;div&gt;应用样式类【table-responsive】或【table-responsive-*】（*取值为sm、md、lg、xl），可以创建响应式表格。
+                                            </p>
+                                            <p>【table-responsive】：当表格溢出时，会有水平滚动条。</p>
+                                            <p>【table-responsive-*】：当屏幕宽度小于*对应的屏幕宽度时，表格溢出，会有水平滚动条。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>颜色翻转表格</td>
+                                        <td>
+                                            <p>通过给&lt;table&gt;元素应用样式类【table-dark】可以实现表格颜色反转，表现为黑色背景、白色文字的表格。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>表头类</td>
+                                        <td>
+                                            <p>BootStrap为表头元素&lt;thead&gt;增加了几个样式类。</p>
+                                            <p>【thead-light】：设置表头为浅灰色背景、白色文字。</p>
+                                            <p>【thead-dark】：设置表头为深灰色背景、白色文字。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>状态 类</td>
+                                        <td>
+                                            <p>BootStrap为表格提供了9种状态的样式类，分别如下：</p>
+                                            <p>【table-primary】：蓝色，指定这是一个重要的操作。</p>
+                                            <p>【table-success】：绿色，指定这是一个允许执行的操作。</p>
+                                            <p>【table-danger】：红色，指定这是一个危险的操作。</p>
+                                            <p>【table-info】：浅蓝色，表示内容已变更。</p>
+                                            <p>【table-warning】：橘色，表示需要注意的操作。</p>
+                                            <p>【table-active】：灰色，用于鼠标悬停的效果。</p>
+                                            <p>【table-secondary】：灰色，表示内容不是特别重要。</p>
+                                            <p>【table-light】：浅灰色，可以是表格行的背景。</p>
+                                            <p>【table-dark】：深灰色，可以是表格行的背景。</p>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p52-60
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- index-6 -->
+                    <div class="col-sm-12 p-3" id="index3-6">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">按钮类</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>预定义按钮</td>
+                                        <td>
+                                            <p>BootStrap为按钮&lt;button&gt;提供了一个基本的样式类【btn】或【btn-*】（*的取值为primary、secondary、success、danger、warning、info、light、dark、link），所有的按钮样式都可以使用它，同时，将鼠标指针移动到按钮上时，按钮会高亮显示。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>按钮标签</td>
+                                        <td>
+                                            <p>【btn】或【btn-*】不仅可以用于&lt;button&gt;元素，还可以用于&lt;a&gt;或者&lt;input&gt;元素上，同样可以得到对应的按钮效果。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>按钮边框</td>
+                                        <td>
+                                            <p>通过给按钮应用样式类【btn-outline-*】来代替【btn-*】以获得一个背景颜色不深的按钮。（*的取值为primary、secondary、success、danger、warning、info、light、dark）（注：【btn-outline-light】按钮的字和背景都很浅，鼠标指针移上去后，字的颜色会变深）
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>按钮尺寸</td>
+                                        <td>
+                                            <p>通过给&lt;button&gt;元素应用样式类【btn-lg】或者【btn-sm】可以获得一个不同尺寸的按钮。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>块级按钮</td>
+                                        <td>
+                                            <p>通过给&lt;button&gt;元素应用样式类【btn-block】可以将按钮拉伸至父元素100%宽度，同时该按钮变为块级元素。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>按钮激活状态</td>
+                                        <td>
+                                            <p>通过给&lt;button&gt;元素应用样式类【active】可以让按钮处于“被激活状态”，其表现为按压下去的样式（底色更深、边框颜色更深、向内投射阴影）。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>按钮禁用状态</td>
+                                        <td>
+                                            <p>通过给&lt;button&gt;元素应用【disabled】属性、&lt;a&gt;元素应用样式类【disabled】，可以让按钮处于“被禁用状态”，其表现为颜色变淡50%、失去渐变效果、无法被点击。
+                                            </p>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p61-65
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-7 -->
+                    <div class="col-sm-12 p-3" id="index3-7">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">图像与图文类</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>响应式图像</td>
+                                        <td>
+                                            <p>通过给&lt;img&gt;元素应用样式类【img-fluid】或者定义“max-width:100%;height:auto;”样式，可以让图像支持响应式布局，从而让图像随着父元素大小同步缩放。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>图像基本样式</td>
+                                        <td>
+                                            <p>通过给&lt;img&gt;元素应用样式类【img-thumnail】，可以让图像自动加上一个带圆角及1px边框的外框的基本样式。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>图像对齐</td>
+                                        <td>
+                                            <p>对于应用了【block】样式类的&lt;img&gt;元素来说，我们可以使用浮动或者文字对齐，来实现图像的对齐，并且可以使用【mx-auto】样式类进行居中。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>picture元素</td>
+                                        <td>
+                                            <p>HTML5提供了一个全新的元素：&lt;picture&gt;元素，它可以为&lt;img&gt;指定多个&lt;source&gt;元素，利用&lt;picture&gt;元素可以实现&lt;img&gt;在不同屏幕下显示不同图像的效果（图像样式【img-*】类需要添加到&lt;img&gt;元素上而不是&lt;picture&gt;元素上）。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>图文框</td>
+                                        <td>
+                                            <p>如果需要显示的内容包括一个图片和一个可选标题，可以将【figure】类、【figure-caption】类、【figure-img】类分别应用在&lt;figure&gt;元素、&lt;figcaption&gt;元素、&lt;img&gt;元素上。
+                                            </p>
+                                            <pre
+                                                class="code">&lt;figure class="figure"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="#" alt="#" class="figure-img"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption class="figure-caption"&gt;文字&lt;/figcaption&gt;<br>&lt;/figure&gt;</pre>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p65-68
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

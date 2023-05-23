@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section2</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container bg-light">
+
+        <!-- 主标题 -->
+        <div class="row">
+            <div class="col-sm-12 text-center p-4">
+                <span class="h1 display-3 font-weight-bold bg-color1">No.2 栅格系统</span>
+            </div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="list-unstyled text-center p-2">
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section3.html">第三章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section4.html">第四章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section5.html">第五章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section6.html">第六章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../shopping/shopping-index.html">综合案例</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主体 -->
+        <div class="row">
+
+            <!-- index-nav -->
+            <div class="col-sm-3 border">
+                <div class="list-group">
+                    <a href="#index2-1" class="list-group-item list-group-item-action">栅格系统简述</a>
+                    <a href="#index2-2" class="list-group-item list-group-item-action">栅格系统的断点</a>
+                    <a href="#index2-3" class="list-group-item list-group-item-action">列的运用</a>
+                </div>
+            </div>
+
+            <!-- index-main -->
+            <div class="col-sm-9 border-top px-5">
+                <div class="row">
+
+                    <!-- index-1 -->
+                    <div class="col-sm-12 p-3" id="index2-1">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">栅格系统简述</span>
+                            </div>
+                            <div class="card-body pb-3">
+                                <p>栅格系统是BootStrap框架的重要部分。</p>
+                                <p>栅格系统将网页的宽度平均分成12份，开发者可以自由按份组合。</p>
+                                <p>一行数据必须包裹在“.container（固定宽度）”或者“.container-fluid（100%宽度）”中，以便为其赋值合适的排列和内边距。</p>
+                                <p>通过“行（row）”在水平方向创建一组“列（col）”。用户内容应当放置在“列（col）”中，并且只有“列（col）”可以作为“行（row）”的直接子元素。</p>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p10-11
+                                </blockquote>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- index-2 -->
+                    <div class="col-sm-12 p-3" id="index2-2">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">栅格系统的断点</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>响应断点</th>
+                                        <th>屏幕宽度范围/px</th>
+                                    </tr>
+                                    <tr>
+                                        <td>extra-small（超小设备 xs）</td>
+                                        <td class="text-center">&lt;576 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>small（平板设备 sm）</td>
+                                        <td class="text-center">576 ~ 768 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>medium（桌面显示器 md）</td>
+                                        <td class="text-center">768 ~ 992</td>
+                                    </tr>
+                                    <tr>
+                                        <td>large（大桌面显示器 lg）</td>
+                                        <td class="text-center">992 ~ 1200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>extra-large（超大桌面显示器 xl）</td>
+                                        <td class="text-center">&gt;=1200 </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p13
+                                </blockquote>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- index-3 -->
+                    <div class="col-sm-12 p-3" id="index2-3">
+
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">列的运用</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>等宽列</td>
+                                        <td>
+                                            <p>可以使用不带数字的“col-X”（X为sm、md、lg、xl）类来设置对应设备的等宽列；也可以不带设备宽度前缀“col”类，设置所有设备上的等宽列。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>多行等宽列</td>
+                                        <td>
+                                            <p>等宽列可以设置“w-100”类为多行等宽列。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>一行宽度</td>
+                                        <td>
+                                            <p>可以单独设置一行的宽度，其他行等宽</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>可变宽度</td>
+                                        <td>
+                                            <p>通过设置“col-X-auto”类（X为xs、md、lg、xl）或者“col-auto”类，根据内容自动调整列的宽度</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>列偏移</td>
+                                        <td>
+                                            <p>通过设置“offset-*”类或者“offset-X-*”类设置向右偏移的列数，*为数字1-11，X为sm、md、lg、xl</p>
+                                            <p>偏移列和显示列综合不能超过12，否则换行。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>列排序</td>
+                                        <td>
+                                            <p>通过设置“order-*”类或者“order-X-*”类来实现列排序。</p>
+                                            <p>*是first、last或者0-12的数字，按数字大小排序，first排在最前面，last排在最后面。</p>
+                                            <p>X代表xs、sm、md、lg。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>列嵌套</td>
+                                        <td>
+                                            <p>可以将一个或多个“行（row）”放入一个“列（col）”中，内部行的宽度是100%，即外部列的宽度。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>垂直排列</td>
+                                        <td>
+                                            <p>设置“align-items-start”类到“row（行）”元素上，可以实现整行内容在垂直方向的顶部排列。</p>
+                                            <p>设置“align-items-center”类到“row（行）”元素上，可以实现整行内容在垂直方向的中间排列。</p>
+                                            <p>设置“align-items-end”类到“row（行）”元素上，可以实现整行内容在垂直方向的底部排列。</p>
+                                            <p>设置“align-self-start”类到“row（行）”元素上，可以实现列在垂直方向的顶部排列。</p>
+                                            <p>设置“align-self-center”类到“row（行）”元素上，可以实现列在垂直方向的中间排列。</p>
+                                            <p>设置“align-self-end”类到“row（行）”元素上，可以实现列在垂直方向的底部排列。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>水平排列</td>
+                                        <td>
+                                            <p>设置“justify-content-start”类到“row（行）”元素上，可以实现列的左排列。</p>
+                                            <p>设置“justify-content-center”类到“row（行）”元素上，可以实现列的居中排列。</p>
+                                            <p>设置“justify-content-end”类到“row（行）”元素上，可以实现列的右排列。</p>
+                                            <p>设置“justify-content-around”类到“row（行）”元素上，可以实现列的平均分布。</p>
+                                            <p>设置“justify-content-between”类到“row（行）”元素上，可以实现列的两端对齐。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>列无边距</td>
+                                        <td>
+                                            <p>设置“no-gutters”类可以去除“row”元素的左右外边距和“row”下的“col”元素的左右内边距。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>列的居左/居右</td>
+                                        <td>
+                                            <p>设置“mr-auto”类可以让元素居左排列。</p>
+                                            <p>设置“ml-auto”类可以让元素居右排列。</p>
+                                            <p>设置“col-auto”类可以让内容自适应列宽。</p>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p17-26
+                                </blockquote>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

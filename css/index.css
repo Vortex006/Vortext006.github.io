@@ -1,0 +1,25 @@
+.bg-color1 {
+    color: #2897bf;
+}
+
+.main-nav {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: 0.5rem;
+}
+
+a:visited,
+a:link {
+    color: #2897bf;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.code {
+    background-color: #6c757d;
+    color: white;
+}

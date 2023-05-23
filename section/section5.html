@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section5</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container bg-light">
+
+        <!-- 主标题 -->
+        <div class="row">
+            <div class="col-sm-12 text-center p-4">
+                <span class="h1 display-3 font-weight-bold bg-color1">No.5 表单</span>
+            </div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="list-unstyled text-center p-2">
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section2.html">第二章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section3.html">第三章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section4.html">第四章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section6.html">第六章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../shopping/shopping-index.html">综合案例</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主体 -->
+        <div class="row">
+
+            <!-- index-nav -->
+            <div class="col-sm-3 border">
+                <div class="list-group">
+                    <a href="#index5-1" class="list-group-item list-group-item-action">基础表单</a>
+                    <a href="#index5-2" class="list-group-item list-group-item-action">表单控件</a>
+                    <a href="#index5-3" class="list-group-item list-group-item-action">表单禁用与表单大小</a>
+                    <a href="#index5-4" class="list-group-item list-group-item-action">表单验证与输入框组</a>
+                </div>
+            </div>
+
+            <!-- index-main -->
+            <div class="col-sm-9 border-top px-5">
+                <div class="row">
+
+                    <!-- index-1 -->
+                    <div class="col-sm-12 p-3" id="index5-1">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">基础表单</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>垂直表单</td>
+                                        <td>
+                                            <p>将成对的标签和控件放在一个带有【form-group】类的div标签中</p>
+                                            <p>对于文本形式的控件（如&lt;input&gt;、&lt;select&gt;、&lt;textarea&gt;），可以使用【form-control】类进行样式化。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>内联表单</td>
+                                        <td>
+                                            <p>在form元素上使用【form-inline】类，可以将表单设置为内联表单，可以在label标签元素上添加【sr-only】类来隐藏内联表单的标签。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>水平表单</td>
+                                        <td>
+                                            <p>把一组标签和控件放在一个带有【form-group row】类的div元素中</p>
+                                            <p>为每个标签label添加一个【col-form-label】类</p>
+                                            <p>每个表单控件外层加一个div元素</p>
+                                            <p>通过设置【col-xx-xx】类栅格的方式为左侧的label和右侧的div分配宽度比例</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p117-120
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-2 -->
+                    <div class="col-sm-12 p-3" id="index5-2">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">表单控件</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>控件名</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>输入框</td>
+                                        <td>
+                                            <p>输入框（input）是常见的表单文本控件，包括（text、password、datatime、datatime-local、date、month、time、week、number、email、url、search、tel和color）
+                                            </p>
+                                            <p>对于普通的输入框，为其设置【form-control】类即可改变样式。</p>
+                                            <p>对于range组件和file组件，则分别使用【form-control-range】类和【form-control-file】类。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>下拉框</td>
+                                        <td>
+                                            <p>下拉框（select）也是表单中的基本组件，允许用户从多个选项中进行一个选择或多个选择。</p>
+                                            <p>对于下拉框（select）组件，只需要为其设置【form-control】类即可改变样式。</p>
+                                            <p>若想要实现多选，只需要设置属性【multiple="multiple"】即可。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>文本域</td>
+                                        <td>
+                                            <p>对于文本域（textarea），同样只需要设置【form-control】类即可改变样式。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>单选按钮和复选框</td>
+                                        <td>
+                                            <p>单选按钮和复选框用于让用户从一系列预设置的选项中进行选择。</p>
+                                            <p>将一组标签与选项放入一个使用了【form-check】类的div元素中，为label元素添加【form-check-label】类，为单选按钮或复选框添加【form-check-input】类，选中的项添加【checked】属性。
+                                            </p>
+                                            <p>如果需要将一组单选按钮或复选框水平堆叠，在【form-check】之后再添加【form-check-inline】类即可。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p121-126
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-3 -->
+                    <div class="col-sm-12 p-3" id="index5-3">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">表单禁用与表单大小</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>表单的禁用</td>
+                                        <td>
+                                            <p>对于表单元素而言，禁用只需要添加【disabled="disabled"】属性，该元素就不能被单击。
+                                            </p>
+                                            <p>要禁用一个输入框input，不仅会禁用输入框，还会改变输入框的样式以及鼠标指针悬停在元素上时，鼠标指针的样式。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>表单的高度</td>
+                                        <td>
+                                            <p>使用【form-control-sm】类或【form-control-lg】类来改变表单控件的大小。</p>
+                                            <p>对于label元素，使用【col-form-label-sm】类或【col-form-label-lg】类来改变标签的大小。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>表单的宽度</td>
+                                        <td>
+                                            <p>如果需要修改控件的宽度，可以使用栅格系统来进行设置。</p>
+                                            <p>在表示行的div上添加【form-row】类，在表示列的div上添加【col-xx-xx】类即可使用栅格系统修改控件宽度。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p127-131
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- index-4 -->
+                    <div class="col-sm-12 p-3" id="index5-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">输入框组与表单验证</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>用法</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>表单的验证</td>
+                                        <td>
+                                            <p>有时候，表单的内容需要进行验证，BootStrap提供了验证表单控件的类，适用于input、select、textarea、radio和checkbox。
+                                            </p>
+                                            <p>1.在form元素上添加【was-validated】类。</p>
+                                            <p>2.在需要验证的表单控件上加上【required】属性和相应的正则表达式。</p>
+                                            <p>3.需要提供反馈信息，在控件下方加上用于提供反馈信息的div，并为其添加【invalid-feedback】类，当该控件不符合验证要求时，就会出现反馈信息。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>输入框组</td>
+                                        <td>
+                                            <p>在文本框的左侧、右侧或两侧加上文字、按钮。下拉菜单等附加组件，形成一个表单元素的组合效果，我们称之为输入框组。</p>
+                                            <p>将输入框、左侧或右侧的附加组件放入一个父元素div中，并为div添加【input-group】类。</p>
+                                            <p>若附加组件放在文本框的左侧，则在文本框代码前添加一个div，加上【input-group-prepend】类。</p>
+                                            <p>若附加组件放在文本框的右侧，则在文本框代码后添加一个div，加上【input-group-append】类。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p133-136
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

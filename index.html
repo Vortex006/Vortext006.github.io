@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container bg-light">
+
+        <!-- 主标题 -->
+        <div class="row">
+            <div class="col-sm-12 text-center p-4">
+                <span class="h1 display-3 font-weight-bold bg-color1">BootStrap学习站</span>
+            </div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="list-unstyled text-center p-2">
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section/section2.html">第二章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section/section3.html">第三章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section/section4.html">第四章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section/section5.html">第五章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section/section6.html">第六章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./shopping/shopping-index.html">综合案例</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主体 -->
+        <div class="row">
+
+            <!-- index-nav -->
+            <div class="col-sm-3 border">
+                <div class="list-group">
+                    <a href="#index-1" class="list-group-item list-group-item-action">什么是BootStrap？</a>
+                    <a href="#index-2" class="list-group-item list-group-item-action">BootStrap的优点</a>
+                    <a href="#index-3" class="list-group-item list-group-item-action">如何使用BootStrap？</a>
+                </div>
+            </div>
+
+            <!-- index-main -->
+            <div class="col-sm-9 border-top px-5">
+
+                <div class="row">
+
+                    <!-- index-1 -->
+                    <div class="col-sm-12 p-3" id="index-1">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">什么是BootStrap？</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Bootstrap是一个用于快速开发Web应用程序和网站的前端框架。</p>
+                                <p>在学习Bootstrap前，必须具备HTML、CSS、JavaScript的基础知识，只需要了解相关的class、标签名称所代表的含义，在构建页面时，导入Bootstrap的JS、CSS等，它就会表现出相应的效果。
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p1
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-2 -->
+                    <div class="col-sm-12 p-3" id="index-2">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">BootStrap的优点</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th></th>
+                                        <th>使用BootStrap</th>
+                                        <th>不使用BootStrap</th>
+                                    </tr>
+                                    <tr>
+                                        <td>HTHL</td>
+                                        <td>
+                                            <p>摒弃了复杂而又毫无意义的标签，引入全新的标签，使网页的语义性大大增加。</p>
+                                        </td>
+                                        <td>
+                                            <p>标签复杂而又臃肿，不够灵活</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSS</td>
+                                        <td>
+                                            <p>使用Sass创建的CSS，是动态的CSS，所需代码更少，解析更容易，阅读更轻松</p>
+                                        </td>
+                                        <td>
+                                            <p>书写繁琐、数值固定不变修改、频繁调试</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>JavaScript</td>
+                                        <td>
+                                            <p>使用jQuery库，内置多种JS函数，需要的功能只需要调用相应的函数，十分方便</p>
+                                        </td>
+                                        <td>
+                                            <p>JS语法书写复杂、代码量多且不易于复用</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>移动设备</td>
+                                        <td>
+                                            <p>移动设备优先、响应式布局，对于电脑、手机、平板等设备都能够自适应</p>
+                                        </td>
+                                        <td>
+                                            <p>需要根据不同的设备重构页面、费时费力</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>通用性</td>
+                                        <td>
+                                            <p>IE、Firefox、Google、Edge等主流浏览器都支持BootStrap</p>
+                                        </td>
+                                        <td>
+                                            <p>需要针对不同浏览器做适配、不利于开发</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p2
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-3 -->
+                    <div class="col-sm-12 p-3" id="index-3">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">如何使用BootStrap？</span>
+                            </div>
+                            <div class="card-body">
+                                <p>用户可以前往<a href="https://www.bootcss.com/">BootStrap中文网</a>直接下载BootStrap最新版本即可。</p>
+                                <p>下载完毕后，直接在HTML文件中引入BootStrap的CSS和JS文件：</p>
+                                <pre class="code">&lt;link rel="stylesheet" href="bootstrap.min.css"&gt;
+&lt;script src="jquery-3.4.1.js"&gt;&lt;/script&gt;
+&lt;script src="bootstrap.bundle.js"&gt;&lt;/script&gt;</pre>
+                                <p><i>注：需要优先引入jquery文件</i></p>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p3-5
+                                </blockquote>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

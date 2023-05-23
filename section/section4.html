@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section4</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container bg-light">
+
+        <!-- 主标题 -->
+        <div class="row">
+            <div class="col-sm-12 text-center p-4">
+                <span class="h1 display-3 font-weight-bold bg-color1">No.4 工具类</span>
+            </div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="list-unstyled text-center p-2">
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section2.html">第二章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section3.html">第三章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section5.html">第五章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="./section6.html">第六章</a>
+                    </li>
+                    <li class="list-inline-item rounded bg-color1 border main-nav font-weight-bolder">
+                        <a href="../shopping/shopping-index.html">综合案例</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主体 -->
+        <div class="row">
+
+            <!-- index-nav -->
+            <div class="col-sm-3 border">
+                <div class="list-group">
+                    <a href="#index4-1" class="list-group-item list-group-item-action">背景颜色和边框</a>
+                    <a href="#index4-2" class="list-group-item list-group-item-action">浮动、边距与尺寸</a>
+                    <a href="#index4-3" class="list-group-item list-group-item-action">display和flex</a>
+                </div>
+            </div>
+
+            <!-- index-main -->
+            <div class="col-sm-9 border-top px-5">
+                <div class="row">
+
+                    <!-- index-1 -->
+                    <div class="col-sm-12 p-3" id="index4-1">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">背景颜色和边框</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>背景颜色</td>
+                                        <td>
+                                            <p>通过给元素设置不同的类，来让其显示不同的颜色。</p>
+                                            <p>【bg-primary】：重要的背景颜色 深蓝色</p>
+                                            <p>【bg-success】：执行成功背景颜色 绿色</p>
+                                            <p>【bg-info】：信息提示背景颜色 浅蓝色</p>
+                                            <p>【bg-warning】：警告背景颜色 黄色</p>
+                                            <p>【bg-danger】：危险背景颜色 红色</p>
+                                            <p>【bg-secondary】：副标题背景颜色 浅色</p>
+                                            <p>【bg-dark】：深灰背景颜色</p>
+                                            <p>【bg-light】：浅灰背景颜色</p>
+                                            <p>【bg-white】：白色背景颜色</p>
+                                            <p>【bg-transparent】：透明背景颜色</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>基本边框</td>
+                                        <td>
+                                            <p>通过给元素设置【border】类或者【border-*】类（*取值top、bottom、left、right）来给元素增加边框或者增加某一边的边框。
+                                            </p>
+                                            <p>通过给元素设置【border-0】类或者【border-*-0】类（*取值top、bottom、left、right）来给元素去掉边框或者增加某一边的边框。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>圆角边框</td>
+                                        <td>
+                                            <p>通过给元素设置【rounded】类或者【rounded-*】类，可以让边框呈现各种方位的圆角、圆和椭圆，并设置圆角的大小。</p>
+                                            <p>【rounded】：4个角都是圆角</p>
+                                            <p>【rounded-top】：上边2个角为圆角</p>
+                                            <p>【rounded-bottom】：下边2个角为圆角</p>
+                                            <p>【rounded-left】：左边2个角为圆角</p>
+                                            <p>【rounded-right】：右边2个角为圆角</p>
+                                            <p>【rounded-circle】：正圆</p>
+                                            <p>【rounded-pill】：椭圆</p>
+                                            <p>【rounded-sm】：小圆角</p>
+                                            <p>【rounded-lg】：大圆角</p>
+                                            <p>【rounded-0】：去掉边框圆角</p>
+                                            <p></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>边框的颜色</td>
+                                        <td>
+                                            <p>通过给元素设置【border-*】类可以让边框呈现想要的颜色。*的取值如下：</p>
+                                            <p>【border-primary】：蓝色</p>
+                                            <p>【border-secondary】：浅色</p>
+                                            <p>【border-success】：绿色</p>
+                                            <p>【border-danger】：红色</p>
+                                            <p>【border-warning】：黄色</p>
+                                            <p>【border-info】：浅蓝色</p>
+                                            <p>【border-light】：浅灰色</p>
+                                            <p>【border-dark】：深灰色</p>
+                                            <p>【border-white】：白色</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p76-80
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-2 -->
+                    <div class="col-sm-12 p-3" id="index4-2">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">浮动、边距与尺寸</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>设置浮动</td>
+                                        <td>
+                                            <p>通过给元素设置【float-left】类、【float-right】类或者【float-none】类，来使元素向左、向右浮动或不浮动。</p>
+                                            <p>通过给元素设置【float-*-left】类、【float-*-right】类或者【float-*-none】类，（*取值sm、md、lg、xl）来使元素在设备到达指定断点时，才会向左、向右浮动或不浮动。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>清除浮动</td>
+                                        <td>
+                                            <p>通过给父级元素添加【clearfix】类，可以清除内部元素的浮动。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>设置边距</td>
+                                        <td>
+                                            <p>通过给元素设置边距类，可以让元素获得内边距或者外边距，具体格式如下：</p>
+                                            <p>{属性}{边}-{尺寸}或者{属性}{边}-{断点}-{尺寸} <br>
+                                                属性：属性分为p和m两种。p代表padding，也就是内边距；m代表margin，也就是外边距。</p>
+                                            <p>边：边分为t、b、l和r四种。t代表top，也就是上边；b代表bottom，也就是下边；l代表left，也就是左边；r代表right，也就是右边。
+                                            </p>
+                                            <p>尺寸：尺寸分为0-5和auto。0代表0px；1代表0.25rem（4px）；2代表0.5rem（8px）；3代表1rem（16px）；4代表1.5rem（24px）；5代表3rem（48px）；auto代表自动。
+                                            </p>
+                                            <p>断点：sm（）；md（）；lg（）；xl（）。</p>
+                                            <p>使用【px-*】类或【mx-*】类来设置左右内边距或者左右外边距，这里的x代表left和right。</p>
+                                            <p>使用【py-*】类或者【my-*】类来设置上下内边距或者上下外边距，这里的y代表top和bottom。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>设置宽度和高度</td>
+                                        <td>
+                                            <p>通过给元素设置【w-*】类或者【h-*】类来控制元素的宽度和高度。（*取值为25、50、75、100、auto），分别代表25%、50%、75%、100%、auto。w代表width，也就是宽度；h代表height，也就是高度。
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>最大宽度高度</td>
+                                        <td>
+                                            <p>通过给元素设置【mw-100】类或【mh-100】类来设置元素的最大宽度和最大高度。</p>
+                                            <p>通过给元素设置【min-vw-100】类或【min-vh-100】类来设置元素的min-width和min-height的值相对窗口为100%。
+                                            </p>
+                                            <p>通过给元素设置【vw-100】类或【vh-100】类来设置元素的尺寸相对窗口为100%。</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p81-87
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- index-3 -->
+                    <div class="col-sm-12 p-3" id="index4-3">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <span class="h3 border-left">display和flex</span>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr class="text-center">
+                                        <th>说明</th>
+                                        <th>用法</th>
+                                    </tr>
+                                    <tr>
+                                        <td>定义display</td>
+                                        <td>
+                                            <p>通过给元素设置【d-{value}】类或者【d-*-{value}】类，可以改变元素的display属性的值。（value的取值为none、inline、inline-block、block、table、table-cell、table-row、flex、inline-flex；*取值为sm、md、lg、xl）
+                                            </p>
+                                            <p>【d-none】：元素不显示</p>
+                                            <p>【d-inline】：内联显示，元素会成为行内元素，前后无换行，不能设置元素的宽度和高度</p>
+                                            <p>【d-inline-block】：内联级显示，显示在一行，但是可以设置元素的宽度和高度</p>
+                                            <p>【d-block】：块级显示，元素会换行显示，可以设置元素的宽度和高度</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>flex布局的display属性</td>
+                                        <td>
+                                            <p>display属性用于指定元素容器的类型，默认为inline，意味着元素会被显示成一个内联元素，在元素前后没有换行符。</p>
+                                            <p>如果设置display属性的值为flex，则元素为flex的容器。</p>
+                                            <p>如果设置display属性的值为none，则元素不会显示。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>flex布局的flex-flow属性</td>
+                                        <td>
+                                            <p>flex-flow属性的值是flex-direction的值和flex-wrap的值的组合。</p>
+                                            <p>通过给元素设置【flex-{value}】类或【flex-*-{value}】类，可以设置弹性盒子的排列方向。（*取值sm、md、lg、xl）
+                                            </p>
+                                            <p>【flex-row】：弹性盒子元素按横轴方向顺序排列（默认）</p>
+                                            <p>【flex-row-reverse】：弹性盒子元素按横轴方向逆序排列</p>
+                                            <p>【flex-column】：弹性盒子元素按纵轴方向顺序排列</p>
+                                            <p>【flex-column-reverse】：弹性盒子元素按纵轴方向逆序排列</p>
+                                            <p>【flex-wrap】：容器为多行，flex子项溢出的部分会被放置在新行（换行），第一行显示在上方</p>
+                                            <p>【flex-nowarp】：容器为单行，flex子项可能会溢出容器，不换行（默认）</p>
+                                            <p>【flex-wrap-reverse】：翻转warp排列（换行），第一行显示在下方</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>flex的排列方式</td>
+                                        <td>
+                                            <p>flex的排列方式与普通元素基本一致，详见<a href="./section2.html#index2-3">列的运用</a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>flex填充</td>
+                                        <td>
+                                            <p>通过给元素设置【flex-fill】类或者【flex-{sm、md、lg、xl}-fill】类，可以强制让每个元素占据相等的水平宽度</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <blockquote class="blockquote text-right">
+                                    ---参考<cite title="参考书籍">《Bootstrap基础教程》</cite>p87-104
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+[
+    {
+        "Title": "HeNan",
+        "Body": [
+            {
+                "Option": "郑州市",
+                "Value": "ZhengZhou"
+            },
+            {
+                "Option": "开封市",
+                "Value": "KaiFeng"
+            },
+            {
+                "Option": "洛阳市",
+                "Value": "LuoYang"
+            },
+            {
+                "Option": "平顶山市",
+                "Value": "PingDingShan"
+            },
+            {
+                "Option": "安阳市",
+                "Value": "AnYang"
+            },
+            {
+                "Option": "鹤壁市",
+                "Value": "HeBi"
+            },
+            {
+                "Option": "焦作市",
+                "Value": "JiaoZuo"
+            },
+            {
+                "Option": "濮阳市",
+                "Value": "PuYang"
+            },
+            {
+                "Option": "许昌市",
+                "Value": "XuChang"
+            },
+            {
+                "Option": "漯河市",
+                "Value": "LuoHe"
+            },
+            {
+                "Option": "三门峡市",
+                "Value": "SanMenXia"
+            },
+            {
+                "Option": "南阳市",
+                "Value": "NanYang"
+            },
+            {
+                "Option": "商丘市",
+                "Value": "ShangQiu"
+            },
+            {
+                "Option": "信阳市",
+                "Value": "XinYang"
+            },
+            {
+                "Option": "周口市",
+                "Value": "ZhouKou"
+            },
+            {
+                "Option": "驻马店市",
+                "Value": "ZhuMaDian"
+            }
+        ]
+    },
+    {
+        "Title": "HeBei",
+        "Body": [
+            {
+                "Option": "石家庄市",
+                "Value": "ShiJiaZhuang"
+            },
+            {
+                "Option": "唐山市",
+                "Value": "TangShan"
+            },
+            {
+                "Option": "秦皇岛市",
+                "Value": "QinHuangDao"
+            },
+            {
+                "Option": "邯郸市",
+                "Value": "HanDan"
+            },
+            {
+                "Option": "邢台市",
+                "Value": "XingTai"
+            },
+            {
+                "Option": "保定市",
+                "Value": "BaoDing"
+            },
+            {
+                "Option": "张家口市",
+                "Value": "ZhangJiaKou"
+            },
+            {
+                "Option": "承德市",
+                "Value": "ChengDe"
+            },
+            {
+                "Option": "沧州市",
+                "Value": "CangZhou"
+            },
+            {
+                "Option": "廊坊市",
+                "Value": "LangFang"
+            },
+            {
+                "Option": "衡水市",
+                "Value": "HengShui"
+            }
+        ]
+    },
+    {
+        "Title": "HuNan",
+        "Body": [
+            {
+                "Option": "长沙市",
+                "Value": "ChangSha"
+            },
+            {
+                "Option": "衡阳市",
+                "Value": "HengYang"
+            },
+            {
+                "Option": "邵阳市",
+                "Value": "ShaoYang"
+            },
+            {
+                "Option": "永州市",
+                "Value": "YongZhou"
+            },
+            {
+                "Option": "常德市",
+                "Value": "ChangDe"
+            },
+            {
+                "Option": "岳阳市",
+                "Value": "YueYang"
+            },
+            {
+                "Option": "郴州市",
+                "Value": "BingZhou"
+            },
+            {
+                "Option": "怀化市",
+                "Value": "HuaiHua"
+            },
+            {
+                "Option": "株洲市",
+                "Value": "ZhuZhou"
+            },
+            {
+                "Option": "益阳市",
+                "Value": "YiYang"
+            }
+        ]
+    },
+    {
+        "Title": "HuBei",
+        "Body": [
+            {
+                "Option": "武汉市",
+                "Value": "WuHan"
+            },
+            {
+                "Option": "黄石市",
+                "Value": "HuangShi"
+            },
+            {
+                "Option": "十堰市",
+                "Value": "ShiYan"
+            },
+            {
+                "Option": "荆州市",
+                "Value": "JinZhou"
+            },
+            {
+                "Option": "宜昌市",
+                "Value": "YiChang"
+            },
+            {
+                "Option": "襄阳市",
+                "Value": "XiangYang"
+            },
+            {
+                "Option": "鄂州市",
+                "Value": "EZhou"
+            },
+            {
+                "Option": "荆门市",
+                "Value": "JinMen"
+            },
+            {
+                "Option": "孝感市",
+                "Value": "XiaoGan"
+            },
+            {
+                "Option": "黄冈市",
+                "Value": "HuangGang"
+            },
+            {
+                "Option": "咸宁市",
+                "Value": "XianNing"
+            },
+            {
+                "Option": "随州市",
+                "Value": "SuiZhou"
+            }
+        ]
+    },
+    {
+        "Title": "GuangDong",
+        "Body": [
+            {
+                "Option": "深圳市",
+                "Value": "ShenZhen"
+            },
+            {
+                "Option": "广州市",
+                "Value": "GuangZhou"
+            },
+            {
+                "Option": "珠海市",
+                "Value": "ZhuHai"
+            },
+            {
+                "Option": "东莞市",
+                "Value": "DongGuan"
+            },
+            {
+                "Option": "佛山市",
+                "Value": "FoShan"
+            },
+            {
+                "Option": "中山市",
+                "Value": "ZhongShan"
+            },
+            {
+                "Option": "惠州市",
+                "Value": "HuiZhou"
+            },
+            {
+                "Option": "汕头市",
+                "Value": "ShanTou"
+            },
+            {
+                "Option": "江门市",
+                "Value": "JiangMen"
+            },
+            {
+                "Option": "湛江市",
+                "Value": "ZhanJiang"
+            },
+            {
+                "Option": "肇庆市",
+                "Value": "ZhaoQing"
+            },
+            {
+                "Option": "梅州市",
+                "Value": "MeiZhou"
+            },
+            {
+                "Option": "茂名市",
+                "Value": "MaoMing"
+            },
+            {
+                "Option": "阳江市",
+                "Value": "YangJiang"
+            },
+            {
+                "Option": "清远市",
+                "Value": "QingYuan"
+            },
+            {
+                "Option": "韶关市",
+                "Value": "ShaoGuan"
+            },
+            {
+                "Option": "揭阳市",
+                "Value": "JieYang"
+            },
+            {
+                "Option": "汕尾市",
+                "Value": "ShanWei"
+            },
+            {
+                "Option": "潮州市",
+                "Value": "ChaoZhou"
+            },
+            {
+                "Option": "河源市",
+                "Value": "HeYuan"
+            },
+            {
+                "Option": "云浮市",
+                "Value": "YunFu"
+            }
+        ]
+    },
+    {
+        "Title": "GuangXi",
+        "Body": [
+            {
+                "Option": "东城区",
+                "Value": "BeiJing-DongCheng"
+            },
+            {
+                "Option": "西城区",
+                "Value": "BeiJing-XiCheng"
+            },
+            {
+                "Option": "崇文区",
+                "Value": "BeiJing-ChongWen"
+            },
+            {
+                "Option": "宣武区",
+                "Value": "BeiJing-XuanWu"
+            },
+            {
+                "Option": "朝阳区",
+                "Value": "BeiJing-ChaoYang"
+            },
+            {
+                "Option": "丰台区",
+                "Value": "BeiJing-FengTai"
+            },
+            {
+                "Option": "石景山区",
+                "Value": "BeiJing-ShiJingShan"
+            },
+            {
+                "Option": "海淀区",
+                "Value": "BeiJing-HaiDian"
+            }
+        ]
+    },
+    {
+        "Title": "ShangHai",
+        "Body": [
+            {
+                "Option": "黄浦区",
+                "Value": "ShangHai-HuangPu"
+            },
+            {
+                "Option": "徐汇区",
+                "Value": "ShangHai-XuHui"
+            },
+            {
+                "Option": "长宁区",
+                "Value": "ShangHai-ChangNing"
+            },
+            {
+                "Option": "静安区",
+                "Value": "ShangHai-JingAn"
+            },
+            {
+                "Option": "普陀区",
+                "Value": "ShangHai-PuTuo"
+            },
+            {
+                "Option": "虹口区",
+                "Value": "ShangHai-HongKou"
+            },
+            {
+                "Option": "杨浦区",
+                "Value": "ShangHai-YangPu"
+            },
+            {
+                "Option": "浦东新区",
+                "Value": "ShangHai-PuDong"
+            },
+            {
+                "Option": "闵行区",
+                "Value": "ShangHai-MinXing"
+            },
+            {
+                "Option": "宝山区",
+                "Value": "ShangHai-BaoShan"
+            },
+            {
+                "Option": "嘉定区",
+                "Value": "ShangHai-JiaDing"
+            },
+            {
+                "Option": "金山区",
+                "Value": "ShangHai-JinShan"
+            },{
+                "Option": "松江区",
+                "Value": "ShangHai-SongJiang"
+            },{
+                "Option": "青浦区",
+                "Value": "ShangHai-QingPu"
+            },{
+                "Option": "奉贤区",
+                "Value": "ShangHai-FengXian"
+            },{
+                "Option": "崇明区",
+                "Value": "ShangHai-ChongMing"
+            }
+        ]
+    }
+]

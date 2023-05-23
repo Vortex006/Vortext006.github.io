@@ -1,0 +1,15 @@
+#red {
+    color: rgb(255, 0, 0);
+}
+
+#green {
+    color: rgb(0, 255, 0);
+}
+
+#blue {
+    color: rgb(0, 0, 255);
+}
+
+#title {
+    color: rgb(50, 50, 50);
+}
